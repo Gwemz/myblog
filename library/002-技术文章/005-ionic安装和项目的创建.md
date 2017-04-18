@@ -1,4 +1,5 @@
 ## ionic安装和项目的创建
+`by winter`
 
 说来惭愧，都说隔行如隔山，没想到自己对同行的了解都微乎其微，还成天称是程序猿，直到前几天自己才听到Ionic,上度娘一问，瞬间就泪崩了，竟然在我身边有PhoneGap、cordova、AngularJS、nodejs、npm等等这么多“赫赫有名”的专有名词我以前竟然听都没听到过，可想自己是有多无知，以下是我这几天科普来的，错误之处还望指出，谢谢！
 
@@ -74,15 +75,95 @@ NPM是随同NodeJS一起安装的包管理工具，能解决NodeJS代码部署�
 混合应用基本上是一款手机应用，它和撰写网站的程序语言基本相同，唯一不同的就是他们包含在一个孤立的浏览器中（WebView）， 原生应用通过WebView运行Web应用，混合应用可以调用手机摄像头、GPS等，通过利用插件，混合应用可以调用手机其它的硬件功能，你可以利用开发Web应用的技术开发混合应用。然而，WebView有速度的限制， 制作成熟的3D图像游戏可能不是最好的选择。
 
 ### 安装Ionic
-1. 需要有JDK和SDK环境，这是Android开发必有的平台（JDK在技术文章003中已经详细阐述了）
+#### 1. 需要有JDK和SDK环境，这是Android开发必有的平台（JDK在技术文章003中已经详细阐述了）
 
-  安卓SDK下载以及环境的配置：
-  下载地址：（可以使用包含的 sdkmanager 下载其他 SDK 软件包 需要翻墙） [立即下载](https://dl.google.com/android/repository/tools_r25.2.3-windows.zip)
+安卓SDK下载以及环境的配置：
 
-  ![](assets/002/005-ebfa888c.png)
+下载地址：（可以使用包含的 sdkmanager 下载其他 SDK 软件包 需要翻墙）[立即下载](https://dl.google.com/android/repository/tools_r25.2.3-windows.zip)
 
-  [安卓开发相关资源链接 包含Android Studio](https://developer.android.com/studio/index.html)
+![](assets/002/005-ebfa888c.png)
 
-  下载后双击安装，指定Android SDK的安装目录，为了方便使用Android SDK包含的开发工具，我们在系统环境变量中的Path设置Android SDK的安装目录下的tools目录。
+[安卓开发相关资源链接 包含Android Studio](https://developer.android.com/studio/index.html)
 
-  
+下载后双击安装，指定Android SDK的安装目录，为了方便使用Android SDK包含的开发工具，我们在系统环境变量中的Path设置Android SDK的安装目录下的tools目录。
+
+在Android SDK的安装目录下，双击“SDK Manager.exe”，打开Android SDK Manager，Android SDK Manage负责下载或更新不同版本的SDK包，我们看到默认安装的Android SDK Manager只安装了一个版本的sdk tools。
+
+打开Android SDK Manager，它会获取可安装的sdk版本，但是国内有墙，有时候会出现获取失败的情况。
+
+#### 2. 下载Node.js，安装
+Node.js下载地址： https://nodejs.org/
+
+安装都选默认的就行
+
+装好之后，nodejs会默认配好环境变量，你可以去path路径查看
+
+Node Pakcege Manager（NPM）会在安装Node.js时同时安装其它的包，为了检验Node.js是否在Windows上安装成功，在终端上运行下面的命令：
+
+![](assets/002/005-62f077ad.png)
+
+node -v
+
+你会获得类似下面的版本信息：
+
+v0.12.7
+#### 3.安装Git
+你仅仅需要下载和运行它，根据相应的指引安装即可。为了验证你是否在Windows/Mac上安装Git成功，在终端运行下面的命令行：
+
+Git
+
+你会获得如下输出：
+
+![](assets/002/005-6ddf76d1.png)
+
+#### 4.安装ionic和cordova
+- 打开node.js command prompt使用npm install –g cordova ionic进行安装cordova和ionic（可以分开安装，npm install –g cordova 和 npm install –g -ionic）,很明显，在天朝使用这种方法安装有点行不通。
+
+- 不用急，咱天朝子民有天朝子民的方法，使用淘宝镜像是网上很多人用的方式输入npm install –g cnpm –registry=https//registry.npm.taobao.org,
+安装完成之后，以后的插件都可以使用cnpm来替代npm来安装
+cnpm install –g ionic cordova
+
+-   如果上面方法还不行，就看这里吧
+    1.npm config –globalset registryhttp://registry.cnpmjs.org
+
+    2.npm install –g cordova ionic
+-  查看ionic和cordova是否安装
+
+  ionic
+
+  ionic –v   
+
+  cordova –v
+
+#### 5. 创建项目
+如果你仅仅只运行ionic start appname 命令，Ionic CLI将会构建一个bootstrap应用（所有需要的构建都会在appname文件夹里面），伴随着空的模板，这儿有其他三个模板包括blank（空模板），sidemenu（侧边栏）和tabs（底部导航栏），除此之外，你可以使用Github repo starters和Codepen URL starters等模块，为了获得更多的starter apps模块，你可以访问 [这篇文章](http://www.gajotres.net/a-comprehensive-list-of-ionic-starter-apps/) ，在我们的例子中，我们将会使用sidemenu（侧板栏）模板，在终端运行下面的命令：
+
+ionic start g_app1 sidemenu
+
+- 通过cd命令进入你的项目:$ cd g_app1
+
+- 设置项目使用Sass:ionic setup sass
+
+- 在本地浏览器中实时开发:ionic serve
+
+- 添加一个系统平台 (ios or Android):ionic platform add iOS [Android]
+
+- 注意: iOS 开发需要OS X系统
+
+[详细见Android平台开发指南](https://cordova.apache.org/docs/en/edge/guide_platforms_android_index.md.html)
+
+- 编译你的app:ionic build
+
+- 在模拟器上运行你的app:ionic emulate
+
+- 在真机上运行你的apps（安装应用到插入电脑的Android手机上）:ionic run
+
+- 使用ionic打包服务打包一个app:ionic package
+
+```
+注意：npm install -g ionic cordova （此处安装很费劲，，，，如果安装不上，请直接使用国内镜像），也可以安装cnpm，这样就容易装cordova和ionic
+
+npm install -g cordova --registry https://registry.npm.taobao.org
+
+npm install -g ionic --registry https://registry.npm.taobao.org
+```
