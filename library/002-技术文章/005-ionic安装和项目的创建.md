@@ -89,7 +89,30 @@ NPM是随同NodeJS一起安装的包管理工具，能解决NodeJS代码部署�
 
 在Android SDK的安装目录下，双击“SDK Manager.exe”，打开Android SDK Manager，Android SDK Manage负责下载或更新不同版本的SDK包，我们看到默认安装的Android SDK Manager只安装了一个版本的sdk tools。
 
-打开Android SDK Manager，它会获取可安装的sdk版本，但是国内有墙，有时候会出现获取失败的情况。
+打开Android SDK Manager，(tools目录下的android.bat)它会获取可安装的sdk版本，但是国内有墙，有时候会出现获取失败的情况。
+
+```
+**配置Android环境变量**
+
+- 默认路径安装后，安装完成，开始配置环境变量。
+
+- 打开计算机属性——高级系统设置——环境变量
+
+- 新建一个环境变量，变量名：ANDROID_HOME，变量值：E:\android_sdk\tools_r25.2.3-windows（以你安装目录为准,确认里面有tools和add-ons等多个文件夹），点击确认。
+
+- 在用户变量PATH后面加上变量值%ANDROID_HOME%\platform-tools;点击确认即可。 在系统变量path中添加;E:\android_sdk\tools_r25.2.3-windows\tools
+
+Android SDK配置完成，接下来验证配置是否成功。
+
+点击运行——输入cmd——回车——输入adb——回车，如果出现一堆英文，即表示配置成功，在输入Android，启动Android SDK Manager。
+
+```
+![](assets/002/005-255fc887.png)
+
+![](assets/002/005-094b14eb.png)
+
+![](assets/002/005-f66d6dfb.png)
+
 
 #### 2. 下载Node.js，安装
 Node.js下载地址： https://nodejs.org/
