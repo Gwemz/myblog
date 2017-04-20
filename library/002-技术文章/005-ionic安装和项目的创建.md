@@ -113,7 +113,6 @@ Android SDK配置完成，接下来验证配置是否成功。
 
 ![](assets/002/005-f66d6dfb.png)
 
-
 #### 2. 下载Node.js，安装
 Node.js下载地址： https://nodejs.org/
 
@@ -172,6 +171,8 @@ ionic start g_app1 sidemenu
 - 添加一个系统平台 (ios or Android):ionic platform add iOS [Android]
 
 - 注意: iOS 开发需要OS X系统
+
+- 注意2：在ionic build的时候需要使用VPN 否则它的包下载的非常慢！！！
 
 [详细见Android平台开发指南](https://cordova.apache.org/docs/en/edge/guide_platforms_android_index.md.html)
 
