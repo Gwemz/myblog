@@ -27,6 +27,7 @@
 - [wampserver端口号被占用](?file=002-技术文章/004-wampserver端口号被占用 "wampserver端口号被占用")
 - [ionic安装和项目的创建](?file=002-技术文章/005-ionic安装和项目的创建 "ionic安装和项目的创建")
 - [使用命令行和github交互](?file=002-技术文章/006-使用命令行和github交互 "使用命令行和github交互")
+- [phpcms的安装使用](?file=002-技术文章/007-phpcms的安装使用 "phpcms的安装使用")
 
 ##### 关于我
 - [关于](?file=003-关于我/01-关于 "关于")
