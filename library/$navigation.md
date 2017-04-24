@@ -21,6 +21,7 @@
 - [MVC以及MVVM MVP介绍](?file=001-我的博文/13-MVC以及MVVM MVP介绍 "MVC以及MVVM MVP介绍")
 - [有意思语言摘录](?file=001-我的博文/14-有意思语言摘录 "有意思语言摘录")
 - [如何提升你的面试机会](?file=001-我的博文/15-如何提升你的面试机会 "如何提升你的面试机会")
+- [hold on or give up](?file=001-我的博文/16-hold on or give up "hold on or give up")
 
 ##### 技术文章
 - [通用API接口文档示例](?file=002-技术文章/001-通用API接口文档示例 "通用API接口文档示例")
