@@ -34,6 +34,7 @@
 - [phpcms的安装使用](?file=002-技术文章/007-phpcms的安装使用 "phpcms的安装使用")
 - [wamp下apache2.4.9局域网ip访问时提示403错误](?file=002-技术文章/008-wamp下apache2.4.9局域网ip访问时提示403错误 "wamp下apache2.4.9局域网ip访问时提示403错误")
 - [astar算法研究](?file=002-技术文章/009-astar算法研究 "astar算法研究")
+- [github中ssh密钥](?file=002-技术文章/010-github中ssh密钥 "github中ssh密钥")
 
 ##### 关于我
 - [关于](?file=003-关于我/01-关于 "关于")
