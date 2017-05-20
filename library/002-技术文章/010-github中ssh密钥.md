@@ -1,4 +1,5 @@
 ## github中ssh密钥的生成（如何不用输密码同github交互）
+`使用git Bash`
 
 ### 1. 查看SSH keys是否存在
 
@@ -25,3 +26,7 @@
 ### 3. 将ssh key添加到Github中
 
 用自己喜欢的文本编辑器打开id_rsa.pub文件，里面的信息即为SSH key，将这些信息复制到GitHub的Add SSH key页面即可
+
+### 4. 设置 username 和 email，添加远程地址
+
+![](assets/002/010-980277aa.png)
