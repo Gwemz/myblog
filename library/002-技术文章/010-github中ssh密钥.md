@@ -1,5 +1,5 @@
 ## github中ssh密钥的生成（如何不用输密码同github交互）
-`使用git Bash`
+`使用git Bash  by winter on 2017/5/21`
 
 ### 1. 查看SSH keys是否存在
 
