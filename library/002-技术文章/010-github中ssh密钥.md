@@ -36,6 +36,10 @@ fatal: unable to access 'https://github.com/Gwemz/git.git/': The requested URL r
 
 参考文章： [Git 最著名报错 “ERROR: Permission to XXX.git denied to user”终极解决方案](http://www.jianshu.com/p/12badb7e6c10)
 
+### 多个GITHUB帐号的SSH KEY切换
+
+[参考文章](http://stormzhang.com/other/2013/10/16/github-multiply-ssh-key/)
+
 winter@DESKTOP-43SLAF5 MINGW64 ~/Desktop
 $ ssh-add ~/.ssh/id_rsa
 Identity added: /c/Users/winter/.ssh/id_rsa (/c/Users/winter/.ssh/id_rsa)
