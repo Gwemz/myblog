@@ -30,3 +30,12 @@
 ### 4. 设置 username 和 email，添加远程地址
 
 ![](assets/002/010-980277aa.png)
+
+remote: Permission to Gwemz/git.git denied to winterGuo.
+fatal: unable to access 'https://github.com/Gwemz/git.git/': The requested URL returned error: 403
+
+参考文章： [Git 最著名报错 “ERROR: Permission to XXX.git denied to user”终极解决方案](http://www.jianshu.com/p/12badb7e6c10)
+
+winter@DESKTOP-43SLAF5 MINGW64 ~/Desktop
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/winter/.ssh/id_rsa (/c/Users/winter/.ssh/id_rsa)
