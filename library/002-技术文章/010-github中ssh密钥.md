@@ -43,3 +43,5 @@ fatal: unable to access 'https://github.com/Gwemz/git.git/': The requested URL r
 winter@DESKTOP-43SLAF5 MINGW64 ~/Desktop
 $ ssh-add ~/.ssh/id_rsa
 Identity added: /c/Users/winter/.ssh/id_rsa (/c/Users/winter/.ssh/id_rsa)
+
+How to 切换不同的github账户？
