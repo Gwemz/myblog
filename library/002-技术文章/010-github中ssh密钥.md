@@ -45,3 +45,19 @@ $ ssh-add ~/.ssh/id_rsa
 Identity added: /c/Users/winter/.ssh/id_rsa (/c/Users/winter/.ssh/id_rsa)
 
 How to 切换不同的github账户？
+
+相关参考文献
+
+[文章一](https://gist.github.com/jexchan/2351996)
+
+[文章二](http://www.jianshu.com/p/ee2578821d49)
+
+[文章三](http://memoryboxes.github.io/blog/2014/12/07/duo-ge-gitzhang-hao-zhi-jian-de-qie-huan/)
+
+[文章四](https://github.com/iuap-design/blog/issues/144)
+
+[文章五](http://stormzhang.com/other/2013/10/16/github-multiply-ssh-key/)
+
+修改仓库.git目录下config中的配置文件
+
+![image](assets/002/010-26d69fab.png)
